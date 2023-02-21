@@ -10,7 +10,7 @@ if len(sys.argv) == 1:
 
 try:
 	weight = int(sys.argv[2])
-excpet:
+except:
 	print('Defaulting to weight: 500. The higher the weight the more results will be displayed.')
 	weight = 500
 	
