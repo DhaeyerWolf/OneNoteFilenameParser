@@ -28,5 +28,5 @@ for start in start_indexes:
 	if len(block) > 1000 and len(block) < 5000 and not block.count(b'\x00') > weight:
 		block = block.hex()
 		readable_chars = bytes([x for x in bytes.fromhex(block) if x in range(32, 127)]).decode('latin-1')
-		print('string {}: {}'.format(i,readable_chars))
+		print('\nstring {}: {}\n'.format(i,readable_chars))
 		i+=1
