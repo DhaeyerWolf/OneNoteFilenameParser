@@ -7,7 +7,7 @@ if len(sys.argv) == 1:
     print("Usage: python3 onenoteparser.py filename.one [weight]")
     sys.exit()
 
-if sys.argv != 2:
+if sys.argv == 2:
 	try:
 		weight = int(sys.argv[2])
 	excpet:
