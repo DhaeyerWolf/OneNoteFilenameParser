@@ -7,13 +7,13 @@ if len(sys.argv) == 1:
     print("Usage: python3 onenoteparser.py filename.one [weight]")
     sys.exit()
 
-if sys.argv == 2:
-	try:
-		weight = int(sys.argv[2])
-	excpet:
-		print('Error with the weight, switching to defailt weight: 500. The higher the weight the more results will be displayed.')
-else:
+
+try:
+	weight = int(sys.argv[2])
+excpet:
+	print('Defaulting to weight: 500. The higher the weight the more results will be displayed.')
 	weight = 500
+	
 # Open the file and read in the contents
 with open(sys.argv[1], 'rb') as f:
 	data = f.read()
